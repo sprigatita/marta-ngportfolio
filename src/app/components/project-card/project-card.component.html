@@ -1,0 +1,6 @@
+<div class="project-card">
+  <img [src]="imageUrl" alt="{{ title }}">
+  <ng-container *ngIf="!!this.externalLink">
+      <div class="project-card-title"> <a [href]="this.externalLink">{{ title }}</a></div>
+  </ng-container>
+</div>

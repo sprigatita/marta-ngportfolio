@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Calibri Light", serif;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+.homepage-grid {
+  background-color: black;
+  background-size: 20px 20px;
+  background-image:
+    linear-gradient(to right, #171717 1px, transparent 1px),
+    linear-gradient(to bottom, #171717 1px, transparent 1px);
+}

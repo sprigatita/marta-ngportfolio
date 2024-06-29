@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+
+<div class="hero">
+  <img class="gradient-image" src="assets/img/gradient-1.png">
+  <img class="gradient-image-top" src="assets/img/gradient-2.png">
+  <div class="text-center">
+    <img class="welcome-text" src="assets/img/text-welcome.png">
+
+  </div>
+</div>
+
+
+  <div class="about-me">
+    <div class="row">
+      <div class="col-auto">
+          <img src="assets/img/reectangle-frame.png">
+      </div>
+      <div class="col-8">
+        <div class="row text-start text-white">
+          <h1>Hello, it's me!</h1>
+        </div>
+        <div class="row text-start text-white">
+          <p>I'm Marta, a fellow frontend developer based in Rome, Italy, but with a big sicilian heart!</p>
+          <p>My main interests are spending quality time with my friends, tech and lactose free cappuccino cups!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<app-separator></app-separator>
+
+<div class="projects text-center py-4 text-white">
+  <h1>Check some of my stuff!</h1>
+  <p>Some of them are still a work in progress, be patient!</p>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4 col-lg-3" *ngFor="let project of projectList">
+        <app-project-card [title]="project.title" [imageUrl]="project.imageUrl" [externalLink]="project.externalLink"></app-project-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,138 @@
+/* Stile di base per la sezione hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ // background-image: url('hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden;
+}
+
+.hero .gradient-image {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  max-height: 60vh; /* Imposta l'altezza massima come 20% dell'altezza del viewport */
+  object-fit: cover; /* Assicura che l'immagine si adatti bene dentro il contenitore */
+}
+.hero .gradient-image-top {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  max-height: 20vh; /* Imposta l'altezza massima come 20% dell'altezza del viewport */
+  object-fit: cover; /* Assicura che l'immagine si adatti bene dentro il contenitore */
+}
+
+.hero .title {
+  z-index: 1;
+}
+
+.hero .welcome-text {
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .hero .welcome-text {
+    max-width: 50%;
+  }
+}
+
+/* Media query per schermi molto piccoli (mobile) */
+@media only screen and (max-width: 480px) {
+  .hero {
+    height: 60vh; /* Riduci l'altezza per schermi molto piccoli */
+    padding: 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+}
+
+/* Media query per schermi piccoli (smartphone e phablet) */
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: 70vh;
+    padding: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+  }
+}
+
+/* Media query per schermi medi (tablet in portrait) */
+@media only screen and (max-width: 1024px) {
+  .hero {
+    height: 80vh;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1.4em;
+  }
+}
+
+/* Media query per schermi grandi (desktop) */
+@media only screen and (min-width: 1025px) {
+  .hero {
+    height: 100vh; /* Altezza a 100% della viewport per desktop */
+    padding: 30px;
+  }
+
+  .hero h1 {
+    font-size: 3em;
+  }
+
+  .hero p {
+    font-size: 1.5em;
+  }
+}
+
+
+.about-me {
+  background-color: black;
+  height: 100vh;
+  padding: 15vh;
+  align-content: center;
+}
+
+
+.projects {
+  height: 35vh;
+}
+
+
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Send image to back */
+}
+
+
