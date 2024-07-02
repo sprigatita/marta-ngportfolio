@@ -12,6 +12,13 @@
   text-decoration: none;
 }
 
+
+#navbar img#logo {
+  float: left;
+  height: 50px; /* Adatta questa dimensione come preferisci */
+  margin-right: 20px; /* Spazio tra il logo e i link */
+}
+
 /* Page content */
 .content {
   padding: 16px;
@@ -25,4 +32,18 @@
 
 .sticky + .content {
   padding-top: 60px;
+}
+
+.link5 a {
+  color: white;
+  background-image: linear-gradient(to bottom, transparent 65%, #ec7dd6 0);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  transition: background-size .4s ease;
+}
+
+.link5 a:hover {
+  background-size: 100% 100%;
+  cursor: pointer;
 }

@@ -24,14 +24,14 @@ export class HomepageComponent implements OnInit{
         imageUrl: "assets/img/projects-bomberman.png"
       },
       {
-        title: "Work in Progress",
-        externalLink: "",
-        imageUrl: "assets/img/projects-wip.gif"
+        title: "To-Do-List",
+        externalLink: "https://ng-girls.vercel.app",
+        imageUrl: "assets/img/projects-todo.gif"
       },
       {
-        title: "Work in Progress",
-        externalLink: "",
-        imageUrl: "assets/img/projects-wip.gif"
+        title: "Astro Playground",
+        externalLink: "https://martas-portfolio.vercel.app/",
+        imageUrl: "assets/img/projects-astroplayground.gif"
       },
       {
         title: "Work in Progress",

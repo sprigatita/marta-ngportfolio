@@ -114,7 +114,7 @@
 
 .about-me {
   background-color: black;
-  height: 100vh;
+  height: 80vh;
   padding: 15vh;
   align-content: center;
 }
@@ -135,4 +135,6 @@
   z-index: -1; /* Send image to back */
 }
 
-
+.about-me .h1 {
+  font-family: 'Italiana', serif;
+}
